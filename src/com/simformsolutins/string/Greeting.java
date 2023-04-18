@@ -1,5 +1,12 @@
 package com.simformsolutins.string;
 
+/**
+ * - Create main class and string variable for String, StringBuffer and StringBuilder
+ * - Append at least five lines in StringBuffer and StringBuilder.
+ * - Convert all variables string to upper case latter and trim leading and trailing white space if any.
+ * - Print all variables in console.
+ */
+
 public class Greeting {
 
   public static void main(String[] args) {
