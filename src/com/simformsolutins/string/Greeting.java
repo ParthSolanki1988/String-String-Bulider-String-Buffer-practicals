@@ -3,19 +3,27 @@ package com.simformsolutins.string;
 public class Greeting {
 
   public static void main(String[] args) {
-    String firstGreeting = "Hello ma'am";
+    String firstGreeting = "Hello ma'am";//string literal
     firstGreeting = "     Good Morning!";//3 tabs for trim()
 
 
-
-    System.out.println(firstGreeting);//only print Good Morning because its string Literal , and immutable string
-
-    System.out.println();
-    firstGreeting = firstGreeting.trim();//using
+    /**
+     * only print Good Morning because its string Literal , and immutable string
+     */
     System.out.println(firstGreeting);
 
-    //I forgot to add Good Morning! using string buffer I can append into it
-    StringBuffer stringBuffer = new StringBuffer("Hello sir") //I forgot to add Good Morning! using string buffer I can append into it
+    System.out.println();
+    /**
+     * using trim trailing and leading spaces remove
+     */
+    firstGreeting = firstGreeting.trim();
+    System.out.println(firstGreeting);
+
+    /**
+     * using string buffer I can append into it
+     */
+
+    StringBuffer stringBuffer = new StringBuffer("Hello sir")
         .append(" ,Good Morning!")
         .append("\nfirst of all thank you to giving me this opportunity")
         .append("\nI am parth solanki")
@@ -25,6 +33,10 @@ public class Greeting {
     System.out.println();
 
     System.out.println();
+
+    /**
+     * using string builer I can append into it
+     */
 
     StringBuilder stringBuilder = new StringBuilder("Hello Jay,")
           .append( "Good Morning!")
@@ -46,6 +58,4 @@ public class Greeting {
 
 
   }
-
-
 }
